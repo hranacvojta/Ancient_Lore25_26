@@ -7,4 +7,5 @@ public class Character {
     protected int damage;
     protected int combatSpeed;
     protected boolean completed;
+    protected int overallInpenetrability;
 }

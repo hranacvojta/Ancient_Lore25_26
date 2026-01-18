@@ -14,12 +14,16 @@ public class Inventory {
     }
 
 
-    public boolean addItem(Item item) {
-        return true; //TODO dodelat metodu
+    public void addItem(Item item) {
+        if (item == null) {
+        } else {
+            inventory.add(item);
+            //TODO dodelat metodu
+        }
     }
 
-    public boolean removeItem(Item item) {
-        return true; //TODO dodelat metodu
+    public void removeItem(Item item) {
+        //TODO dodelat metodu
     }
 
     public ArrayList<Item> getInventory() {
