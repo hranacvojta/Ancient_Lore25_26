@@ -1,0 +1,167 @@
+{
+  "rooms": [
+    {
+      "roomName": "Barracks",
+      "unlocked": true,
+      "completed": false,
+      "itemsDropped": []
+    },
+    {
+      "roomName": "Lohorice",
+      "unlocked": false,
+      "completed": false,
+      "itemsDropped": []
+    },
+    {
+      "roomName": "ZdusyNadSazavou",
+      "unlocked": false,
+      "completed": false,
+      "itemsDropped": []
+    },
+    {
+      "roomName": "ForestOfMonsters",
+      "unlocked": false,
+      "completed": false,
+      "itemsDropped": []
+    },
+    {
+      "roomName": "EastMountianRange",
+      "unlocked": false,
+      "completed": false,
+      "itemsDropped": []
+    },
+    {
+      "roomName": "Swamp",
+      "unlocked": false,
+      "completed": false,
+      "itemsDropped": []
+    },
+    {
+      "roomName": "MiddleEarth",
+      "unlocked": false,
+      "completed": false,
+      "itemsDropped": []
+    }
+  ],
+  "weapons": [
+    {
+      "itemName": "RustySword",
+      "price": 0,
+      "damage": 15,
+      "twoHanded": false,
+      "dexterityRequired": 0
+    },
+    {
+      "itemName": "KnightsLongSword",
+      "price": 0,
+      "damage": 40,
+      "twoHanded": true,
+      "dexterityRequired": 3
+    },
+    {
+      "itemName": "ShortIronSword",
+      "price": 30,
+      "damage": 30,
+      "twoHanded": false,
+      "dexterityRequired": 1
+    },
+    {
+      "itemName": "LongIronSword",
+      "price": 45,
+      "damage": 45,
+      "twoHanded": true,
+      "dexterityRequired": 3
+    },
+    {
+      "itemName": "ShortSteelSword",
+      "price": 120,
+      "damage": 55,
+      "twoHanded": false,
+      "dexterityRequired": 5
+    },
+    {
+      "itemName": "LongSteelSword",
+      "price": 155,
+      "damage": 75,
+      "twoHanded": true,
+      "dexterityRequired": 6
+    },
+    {
+      "itemName": "UltimateSword",
+      "price": 10000,
+      "damage": 120,
+      "twoHanded": false,
+      "dexterityRequired": 9
+    }
+  ],
+  "armor": [
+    {
+      "itemName": "LeatherHelmet",
+      "price": 0,
+      "inpenetrability": 10,
+      "bodyPart": "HELMET"
+    },
+    {
+      "itemName": "LeatherLeggins",
+      "price": 15,
+      "inpenetrability": 15,
+      "bodyPart": "LEGGINS"
+    },
+    {
+      "itemName": "LeatherChestplate",
+      "price": 20,
+      "inpenetrability": 25,
+      "bodyPart": "CHESTPLATE"
+    },
+    {
+      "itemName": "AluminiumHelmet",
+      "price": 30,
+      "inpenetrability": 25,
+      "bodyPart": "HELMET"
+    },
+    {
+      "itemName": "AluminiumLeggins",
+      "price": 45,
+      "inpenetrability": 35,
+      "bodyPart": "LEGGINS"
+    },
+    {
+      "itemName": "AluminiumChestplate",
+      "price": 60,
+      "inpenetrability": 55,
+      "bodyPart": "CHESTPLATE"
+    },
+    {
+      "itemName": "SteelHelmet",
+      "price": 70,
+      "inpenetrability": 65,
+      "bodyPart": "HELMET"
+    },
+    {
+      "itemName": "SteelLeggins",
+      "price": 95,
+      "inpenetrability": 95,
+      "bodyPart": "LEGGINS"
+    },
+    {
+      "itemName": "SteelChestplate",
+      "price": 120,
+      "inpenetrability": 130,
+      "bodyPart": "CHESTPLATE"
+    }
+  ],
+  "shields": [
+    {
+      "itemName": "WoodenShield",
+      "price": 75,
+      "inpenetrability": 80,
+      "bodyPart": "SECONDHAND"
+    },
+    {
+      "itemName": "SteelShield",
+      "price": 115,
+      "inpenetrability": 125,
+      "bodyPart": "SECONDHAND"
+    }
+  ]
+}
