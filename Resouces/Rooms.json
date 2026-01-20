@@ -1,0 +1,46 @@
+{
+  "rooms": [
+    {
+      "roomName": "Barracks",
+      "unlocked": true,
+      "completed": false,
+      "itemsDropped": []
+    },
+    {
+      "roomName": "Lohorice",
+      "unlocked": false,
+      "completed": false,
+      "itemsDropped": []
+    },
+    {
+      "roomName": "ZdusyNadSazavou",
+      "unlocked": false,
+      "completed": false,
+      "itemsDropped": []
+    },
+    {
+      "roomName": "ForestOfMonsters",
+      "unlocked": false,
+      "completed": false,
+      "itemsDropped": []
+    },
+    {
+      "roomName": "EastMountianRange",
+      "unlocked": false,
+      "completed": false,
+      "itemsDropped": []
+    },
+    {
+      "roomName": "Swamp",
+      "unlocked": false,
+      "completed": false,
+      "itemsDropped": []
+    },
+    {
+      "roomName": "MiddleEarth",
+      "unlocked": false,
+      "completed": false,
+      "itemsDropped": []
+    }
+  ]
+}
