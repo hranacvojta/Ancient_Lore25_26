@@ -2,7 +2,8 @@ package Characters;
 
 public class HostileCharacter extends Character {
 
-    private int enemyStatus;
-    private boolean agression = false;
-    private boolean necesaryGeneralCompletion = false;
+    private int hostileStatus;
+    private boolean agression;
+    private boolean necesaryGeneralCompletion;
+    private int reward;
 }

@@ -2,10 +2,10 @@ package Characters;
 
 public class Character {
 
-    protected String name;
-    protected int HP;
+    protected String characterName;
+    protected int hp;
     protected int damage;
-    protected int combatSpeed;
+    protected double combatSpeed;
     protected boolean completed;
     protected int overallInpenetrability;
 }

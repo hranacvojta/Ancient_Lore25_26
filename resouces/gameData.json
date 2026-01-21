@@ -163,5 +163,169 @@
       "inpenetrability": 125,
       "bodyPart": "SECONDHAND"
     }
+  ],
+  "friendlyOrNeutralCharacters": [
+    {
+      "characterName":"Smith",
+      "hp": 100,
+      "damage": 80,
+      "combatSpeed": 8,
+      "completed": false,
+      "overallInpenetrability": 0,
+      "friendlyStatus": 20,
+      "begging": false
+    },
+    {
+      "characterName":"Scientist",
+      "hp": 85,
+      "damage": 120,
+      "combatSpeed": 5,
+      "completed": false,
+      "overallInpenetrability": 0,
+      "friendlyStatus": 15,
+      "begging": false
+    },
+    {
+      "characterName":"Mayor",
+      "hp": 120,
+      "damage": 70,
+      "combatSpeed": 7,
+      "completed": false,
+      "overallInpenetrability": 20,
+      "friendlyStatus": 10,
+      "begging": false
+    },
+    {
+      "characterName":"Astrika",
+      "hp": 65,
+      "damage": 120,
+      "combatSpeed": 4,
+      "completed": false,
+      "overallInpenetrability": 0,
+      "friendlyStatus": 0,
+      "begging": false
+    }
+  ],
+  "hostileCharacters": [
+    {
+      "characterName":"Goblin",
+      "hp": 40,
+      "damage": 5,
+      "combatSpeed": 10,
+      "completed": false,
+      "overallInpenetrability": 0,
+      "hostileStatus": 1,
+      "agression": false,
+      "necesaryGeneralCompletion": false,
+      "reward": 10
+    },
+    {
+      "characterName":"Ogre",
+      "hp": 105,
+      "damage": 55,
+      "combatSpeed": 9,
+      "completed": false,
+      "overallInpenetrability": 0,
+      "hostileStatus": 2,
+      "agression": false,
+      "necesaryGeneralCompletion": false,
+      "reward": 35
+    },
+    {
+      "characterName":"TheLyingKnight",
+      "hp": 80,
+      "damage": 35,
+      "combatSpeed": 7,
+      "completed": false,
+      "overallInpenetrability": 55,
+      "hostileStatus": 3,
+      "agression": false,
+      "necesaryGeneralCompletion": false,
+      "reward": 50
+    },
+    {
+      "characterName":"Krallach",
+      "hp": 85,
+      "damage": 20,
+      "combatSpeed": 3,
+      "completed": false,
+      "overallInpenetrability": 0,
+      "hostileStatus": 4,
+      "agression": false,
+      "necesaryGeneralCompletion": false,
+      "reward": 80
+    },
+    {
+      "characterName":"Striga",
+      "hp": 60,
+      "damage": 60,
+      "combatSpeed": 2.5,
+      "completed": false,
+      "overallInpenetrability": 0,
+      "hostileStatus": 6,
+      "agression": false,
+      "necesaryGeneralCompletion": false,
+      "reward": 70
+    },
+    {
+      "characterName":"Kikimora",
+      "hp": 120,
+      "damage": 80,
+      "combatSpeed": 3.5,
+      "completed": false,
+      "overallInpenetrability": 0,
+      "hostileStatus": 8,
+      "agression": false,
+      "necesaryGeneralCompletion": false,
+      "reward": 110
+    },
+    {
+      "characterName":"GeneralJindrich",
+      "hp": 110,
+      "damage": 75,
+      "combatSpeed": 4,
+      "completed": false,
+      "overallInpenetrability": 90,
+      "hostileStatus": 12,
+      "agression": false,
+      "necesaryGeneralCompletion": false,
+      "reward": 0
+    },
+    {
+      "characterName":"Yeti",
+      "hp": 90,
+      "damage": 80,
+      "combatSpeed": 5,
+      "completed": false,
+      "overallInpenetrability": 45,
+      "hostileStatus": 0,
+      "agression": false,
+      "necesaryGeneralCompletion": true,
+      "reward": 180
+    },
+    {
+      "characterName":"Dragon",
+      "hp": 180,
+      "damage": 160,
+      "combatSpeed": 3,
+      "completed": false,
+      "overallInpenetrability": 150,
+      "hostileStatus": 100,
+      "agression": false,
+      "necesaryGeneralCompletion": true,
+      "reward": 100000000
+    },
+    {
+      "characterName":"KingRadovit",
+      "hp": 250,
+      "damage": 150,
+      "combatSpeed": 2,
+      "completed": false,
+      "overallInpenetrability": 120,
+      "hostileStatus": 1000000,
+      "agression": false,
+      "necesaryGeneralCompletion": true,
+      "reward": 0
+    }
   ]
 }
