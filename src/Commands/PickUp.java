@@ -2,8 +2,7 @@ package Commands;
 
 public class PickUp implements Command {
     @Override
-    public String execute() {
-        return "";
+    public void execute() {
     }
 
     @Override

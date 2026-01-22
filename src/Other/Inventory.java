@@ -1,3 +1,5 @@
+package Other;
+
 import Items.Item;
 
 import java.util.ArrayList;

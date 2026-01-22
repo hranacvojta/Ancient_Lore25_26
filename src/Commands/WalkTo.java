@@ -1,18 +1,33 @@
 package Commands;
 
+import Other.GameData;
 import Characters.PlayersLocation;
 
-public class WalkTo implements Command {
-    @Override
-    public String execute() {
+import java.io.Console;
 
-//        switch (Characters.PlayersLocation){
+import static Characters.PlayersLocation.BARRACKS;
+
+
+
+public class WalkTo implements Command {
+
+
+    private Console console;
+    private PlayersLocation playersLocation;
+    GameData gameData;
+
+    @Override
+    public void execute() {
+
+
+//
+//        switch () {
 //            case
 //        }
 
 
 
-        return "";
+
     }
 
     @Override

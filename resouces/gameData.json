@@ -4,50 +4,58 @@
       "roomName": "Barracks",
       "unlocked": true,
       "completed": false,
-      "itemsDropped": [],
-      "idOfLocation": 1
+      "droppedItems": [],
+      "aviableRooms": ["Barracks"]
     },
     {
       "roomName": "Lohorice",
       "unlocked": false,
       "completed": false,
-      "itemsDropped": [],
-      "idOfLocation": 2
+      "droppedItems": [],
+      "aviableRooms": ["ZdusyNadSaazvou"]
+
     },
     {
       "roomName": "ZdusyNadSazavou",
       "unlocked": false,
       "completed": false,
-      "itemsDropped": [],
-      "idOfLocation": 3
+      "droppedItems": [],
+      "aviableRooms": ["Lohorice", "ForestOfMonsters", "EastMountainRange", "Swamp", "MiddleEarth"]
     },
     {
       "roomName": "ForestOfMonsters",
       "unlocked": false,
       "completed": false,
-      "itemsDropped": [],
-      "idOfLocation": 4
+      "droppedItems": [],
+      "aviableRooms": ["ZdusyNadSaazvou"]
+
     },
     {
       "roomName": "EastMountainRange",
       "unlocked": false,
       "completed": false,
-      "itemsDropped": [],
-      "idOfLocation": 6
+      "droppedItems": [],
+      "aviableRooms": ["ZdusyNadSaazvou"]
+
+
     },
     {
       "roomName": "Swamp",
       "unlocked": false,
       "completed": false,
-      "itemsDropped": [],
-      "idOfLocation": 5
+      "droppedItems": [],
+      "aviableRooms": ["ZdusyNadSaazvou"]
+
+
     },
     {
       "roomName": "MiddleEarth",
       "unlocked": false,
       "completed": false,
-      "itemsDropped": [],
-      "idOfLocation": 7
+      "droppedItems": [],
+      "aviableRooms": ["ZdusyNadSaazvou"]
+
+
     }
   ],
   "weapons": [

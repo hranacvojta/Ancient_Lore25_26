@@ -2,8 +2,8 @@ package Commands;
 
 public class Speak implements Command {
     @Override
-    public String execute() {
-        return "";
+    public void execute() {
+
     }
 
     @Override
