@@ -8,5 +8,7 @@ public class Room {
     private String roomName;
     private boolean unlocked =  false;
     private boolean completed = false;
+    private int idOfLocation;
+
 
 }

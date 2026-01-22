@@ -1,8 +1,11 @@
 package Characters;
 
+
 import java.util.function.ToDoubleBiFunction;
 
+
 public class Player extends Character {
+
 
     private boolean headPartCovered = false;
     private boolean chestPartCovered = false;
@@ -19,6 +22,16 @@ public class Player extends Character {
     private boolean questActiveSmithl = false;
     private boolean questActiveScientist = false;
     private boolean questActiveMayor = false;
+
+    private int  locationOfPlayer;
+
+//    BARRACKS
+//    LOHORICE
+//    ZDUSYNADSAZAVOU
+//    FORESTOFMONSTERS
+//    EASTMOUNTAINRANGE
+//    SWAMP
+//    MIDDLEEARTH
 
     //TODO dodelat Invetory
 

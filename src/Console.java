@@ -9,11 +9,7 @@ public class Console {
 
 
 
-    private ArrayList<Armor> armor;
-    private ArrayList<Weapon> weapons;
-    private ArrayList<Armor> shields;
-    private ArrayList<HostileCharacter> hostileCharacters;
-    private ArrayList<FriendlyOrNeutralCharacter> friendlyOrNeutralCharacters;
+
 
 
 

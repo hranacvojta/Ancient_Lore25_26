@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Ancient_Lore25-26.iml" filepath="$PROJECT_DIR$/Ancient_Lore25-26.iml" />
       <module fileurl="file://$PROJECT_DIR$/Resources/Resources.iml" filepath="$PROJECT_DIR$/Resources/Resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jackson-demo.iml" filepath="$PROJECT_DIR$/jackson-demo.iml" />
     </modules>
   </component>
 </project>
