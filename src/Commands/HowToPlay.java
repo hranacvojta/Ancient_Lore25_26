@@ -3,8 +3,8 @@ package Commands;
 
 public class HowToPlay implements Command {
     @Override
-    public void execute() {
-    }
+    public String execute(String command) {
+        return "";}
 
     @Override
     public boolean exit() {

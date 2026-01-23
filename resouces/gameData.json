@@ -5,14 +5,14 @@
       "unlocked": true,
       "completed": false,
       "droppedItems": [],
-      "aviableRooms": ["Barracks"]
+      "aviableRooms": ["Lohorice"]
     },
     {
       "roomName": "Lohorice",
       "unlocked": false,
       "completed": false,
       "droppedItems": [],
-      "aviableRooms": ["ZdusyNadSaazvou"]
+      "aviableRooms": ["ZdusyNadSazvou"]
 
     },
     {
@@ -27,7 +27,7 @@
       "unlocked": false,
       "completed": false,
       "droppedItems": [],
-      "aviableRooms": ["ZdusyNadSaazvou"]
+      "aviableRooms": ["ZdusyNadSazvou"]
 
     },
     {
@@ -35,7 +35,7 @@
       "unlocked": false,
       "completed": false,
       "droppedItems": [],
-      "aviableRooms": ["ZdusyNadSaazvou"]
+      "aviableRooms": ["ZdusyNadSazvou"]
 
 
     },
@@ -44,7 +44,7 @@
       "unlocked": false,
       "completed": false,
       "droppedItems": [],
-      "aviableRooms": ["ZdusyNadSaazvou"]
+      "aviableRooms": ["ZdusyNadSazvou"]
 
 
     },
@@ -53,7 +53,7 @@
       "unlocked": false,
       "completed": false,
       "droppedItems": [],
-      "aviableRooms": ["ZdusyNadSaazvou"]
+      "aviableRooms": ["ZdusyNadSazvou"]
 
 
     }

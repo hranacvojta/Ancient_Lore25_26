@@ -9,14 +9,39 @@ public class Room {
     private String roomName;
     private boolean unlocked =  false;
     private boolean completed = false;
-    private int idOfLocation;
+    private String actualRoomName;
     private ArrayList<Item> droppedItems;
     private ArrayList<String> aviableRooms;
+
 
 
     public String getRoomName() {
         return roomName;
     }
+
+
+    public Room getRoom(String name) {
+        if (rooms == null) return null;
+        for (Room room : rooms) {
+            if (room.getRoomName().equalsIgnoreCase(name)) {
+                return room;
+            }
+        }
+        return null;
+    }
+
+
+    public String getTargetRoomName(String userInput) {
+        if (aviableRooms == null) return null;
+
+        for (String room : aviableRooms) {
+            if (room.equalsIgnoreCase(userInput)) {
+                return room;
+            }
+        }
+        return null;
+    }
+
 
     public void setRoomName(String roomName) {
         this.roomName = roomName;
@@ -38,12 +63,12 @@ public class Room {
         this.completed = completed;
     }
 
-    public int getIdOfLocation() {
-        return idOfLocation;
+    public String getActualRoomName() {
+        return actualRoomName;
     }
 
-    public void setIdOfLocation(int idOfLocation) {
-        this.idOfLocation = idOfLocation;
+    public void setActualRoomName(String actualRoomName) {
+        this.actualRoomName = actualRoomName;
     }
 
     public ArrayList<Item> getDroppedItems() {
@@ -52,5 +77,13 @@ public class Room {
 
     public void setDroppedItems(ArrayList<Item> droppedItems) {
         this.droppedItems = droppedItems;
+    }
+
+    public ArrayList<String> getAviableRooms() {
+        return aviableRooms;
+    }
+
+    public void setAviableRooms(ArrayList<String> aviableRooms) {
+        this.aviableRooms = aviableRooms;
     }
 }

@@ -2,8 +2,8 @@ package Commands;
 
 public class Buy implements Command {
     @Override
-    public void execute() {
-
+    public String execute(String command) {
+        return "";
     }
 
     @Override

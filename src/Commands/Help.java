@@ -2,7 +2,9 @@ package Commands;
 
 public class Help implements Command {
     @Override
-    public void execute() {
+    public String execute(String command) {
+        return "";
+
     }
 
     @Override

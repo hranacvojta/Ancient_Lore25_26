@@ -2,7 +2,9 @@ package Commands;
 
 public class PutOff implements Command {
     @Override
-    public void execute() {
+    public String execute(String command) {
+        return "";
+
     }
 
     @Override

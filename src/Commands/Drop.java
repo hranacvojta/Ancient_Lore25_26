@@ -2,8 +2,8 @@ package Commands;
 
 public class Drop implements Command {
     @Override
-    public void execute() {
-    }
+    public String execute(String command) {
+        return "";}
 
     @Override
     public boolean exit() {

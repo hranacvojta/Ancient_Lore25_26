@@ -2,7 +2,7 @@ package Commands;
 
 public interface Command {
 
-    void execute();
+    String execute(String command);
 
     boolean exit();
 }

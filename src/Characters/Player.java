@@ -2,6 +2,7 @@ package Characters;
 
 
 import Items.Item;
+import Other.Room;
 
 import java.util.ArrayList;
 import java.util.function.ToDoubleBiFunction;
@@ -19,6 +20,8 @@ public class Player extends Character {
     private double dexterityOfPlayer;
     private boolean cheaperSmith = false;
     private int purse;
+    private ArrayList<Item> items;
+    private ArrayList<Room> rooms;
 
 
     private boolean questActiveOldman = false;
@@ -26,15 +29,9 @@ public class Player extends Character {
     private boolean questActiveScientist = false;
     private boolean questActiveMayor = false;
 
-    private PlayersLocation locationOfPlayer;
 
-//    BARRACKS
-//    LOHORICE
-//    ZDUSYNADSAZAVOU
-//    FORESTOFMONSTERS
-//    EASTMOUNTAINRANGE
-//    SWAMP
-//    MIDDLEEARTH
+    private Room locationOfPlayer;
+
 
 
     private ArrayList<Item> playersInventory;
@@ -136,13 +133,13 @@ public class Player extends Character {
         this.questActiveMayor = questActiveMayor;
     }
 
-    public PlayersLocation getLocationOfPlayer() {
-        return locationOfPlayer;
-    }
-
-    public void setLocationOfPlayer(PlayersLocation locationOfPlayer) {
-        this.locationOfPlayer = locationOfPlayer;
-    }
+//    public PlayersLocation getLocationOfPlayer() {
+//        return locationOfPlayer;
+//    }
+//
+//    public void setLocationOfPlayer(PlayersLocation locationOfPlayer) {
+//        this.locationOfPlayer = locationOfPlayer;
+//    }
 
     public ArrayList<Item> getPlayersInventory() {
         return playersInventory;
