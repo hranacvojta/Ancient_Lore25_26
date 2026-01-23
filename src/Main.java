@@ -1,3 +1,4 @@
+import Commands.Help;
 import Other.Console;
 
 public class Main {
@@ -6,7 +7,9 @@ public class Main {
 
         Console console = new Console();
 
-        console.reasuringFunc();
+        console.start();
+
+
 
         //Nalezení konkrétní lokace, se kterou je pak možno dále pracovat
 //        System.out.println("Start lokace: " + data.findLocation("loc_crossroads").getName());

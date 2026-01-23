@@ -1,9 +1,10 @@
 package Other;
 
 import Characters.Player;
-import Commands.Command;
-import Commands.WalkTo;
+import Commands.*;
 
+
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -26,8 +27,22 @@ public class Console {
 
     private HashMap<String, Command> commands = new HashMap<>();
 
+    public HashMap<String, Command> getCommands() {
+        return commands;
+    }
+
     public void inicialization() {
-        commands.put("walkto", new WalkTo());
+//        commands.put("walkto", new WalkTo());
+        commands.put("achivements", new Achievements());
+        commands.put("buy", new Buy());
+        commands.put("drop", new Drop());
+        commands.put("fight", new Fight());
+        commands.put("help", new Help());
+        commands.put("howtoplay", new HowToPlay());
+        commands.put("pickup", new PickUp());
+        commands.put("putoff", new PutOff());
+        commands.put("puton", new PutOn());
+        commands.put("speak", new Speak());
         System.out.println("rooms " + data.rooms.size());
         System.out.println("armor: " + data.armor.size());
         System.out.println("Weapons: " + data.weapons.size());
@@ -41,34 +56,37 @@ public class Console {
 
 
 
+    private ArrayList<Command> commands2 = new ArrayList<>();
+    public void commandsAdd(){
+        commands2.add(new Achievements());
+        commands2.add(new Buy());
+        commands2.add(new Drop());
+        commands2.add(new Fight());
+        commands2.add(new Help());
+        commands2.add(new HowToPlay());
+        commands2.add(new PickUp());
+        commands2.add(new PutOff());
+        commands2.add(new PutOn());
+        commands2.add(new Speak());
+    }
+
+
 
 
     public void execute() {
         System.out.print(" -- ");
-        String command = sc.nextLine();
-        command = command.trim().toLowerCase();
-        String[] listCom = command.trim().toLowerCase().split(" ");
-        if (commands.containsKey(listCom[0])) {
-            if (commands.get(command) instanceof WalkTo walkTo){
-                walkTo.setPlayersLocation(activeRoom);
-            }
-            if (listCom.length>2){
-                System.out.println("command too long");
-                return;
-            }
-            if (listCom.length==2){
-                System.out.println(commands.get(listCom[0]).execute(listCom[1]));
-            }
-            if (listCom.length==1){
-                System.out.println(commands.get(listCom[0]).execute(""));
-            }
+        String input = sc.nextLine().trim().toLowerCase();
+        input = input.trim().toLowerCase();
+        for (int i = 0; i < commands.size(); i++) {
 
-
-
-
-        }else {
-            System.out.println("Invalid command");
+            if (input.equals(commands.get(i))){
+                commands.get(i).execute(input);
+            }else {
+                System.out.println("invalid command");
+            }
         }
+
+
     }
 
 

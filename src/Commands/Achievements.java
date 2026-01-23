@@ -1,8 +1,10 @@
 package Commands;
 
-public class Achievements implements Command{
+public class Achievements implements Command {
+
     @Override
-    public void execute() {
+    public String execute(String command) {
+        return "achivements";
     }
 
     @Override

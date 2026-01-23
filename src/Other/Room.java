@@ -2,6 +2,7 @@ package Other;
 
 import Items.Item;
 
+import javax.print.attribute.standard.MediaSize;
 import java.util.ArrayList;
 
 public class Room {
@@ -12,6 +13,7 @@ public class Room {
     private String actualRoomName;
     private ArrayList<Item> droppedItems;
     private ArrayList<String> aviableRooms;
+    GameData data = new GameData();
 
 
 
@@ -20,9 +22,9 @@ public class Room {
     }
 
 
-    public Room getRoom(String name) {
-        if (rooms == null) return null;
-        for (Room room : rooms) {
+    public Other.Room getRoom(String name) {
+        if (data.rooms == null) return null;
+        for (Room room : data.rooms) {
             if (room.getRoomName().equalsIgnoreCase(name)) {
                 return room;
             }

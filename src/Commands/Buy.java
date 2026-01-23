@@ -3,7 +3,7 @@ package Commands;
 public class Buy implements Command {
     @Override
     public String execute(String command) {
-        return "";
+        return "buy";
     }
 
     @Override

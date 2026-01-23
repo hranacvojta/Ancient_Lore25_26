@@ -1,10 +1,12 @@
 package Commands;
 
+import Other.Console;
+
 public class Help implements Command {
+    Console console;
     @Override
     public String execute(String command) {
-        return "";
-
+        return "commands:";
     }
 
     @Override
