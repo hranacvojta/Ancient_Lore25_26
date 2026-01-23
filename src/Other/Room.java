@@ -21,9 +21,14 @@ public class Room {
         return roomName;
     }
 
+    public Room() {}
+
+
 
     public Other.Room getRoom(String name) {
-        if (data.rooms == null) return null;
+        if (data.rooms == null) {
+            return null;
+        }
         for (Room room : data.rooms) {
             if (room.getRoomName().equalsIgnoreCase(name)) {
                 return room;
@@ -77,15 +82,8 @@ public class Room {
         return droppedItems;
     }
 
-    public void setDroppedItems(ArrayList<Item> droppedItems) {
-        this.droppedItems = droppedItems;
-    }
-
     public ArrayList<String> getAviableRooms() {
         return aviableRooms;
     }
 
-    public void setAviableRooms(ArrayList<String> aviableRooms) {
-        this.aviableRooms = aviableRooms;
-    }
 }

@@ -74,23 +74,16 @@ public class Console {
 
 
     public void execute() {
-        System.out.print(" -- ");
-        String input = sc.nextLine().trim().toLowerCase();
+        System.out.print(">> ");
+        String input = sc.next();
         input = input.trim().toLowerCase();
-        for (int i = 0; i < commands.size(); i++) {
+        if (commands.containsKey(input)) {
+            System.out.println(">> " + commands.get(input).execute(input));
+        }else {
+            System.out.println(">> Nedefinovany prikaz");
 
-            if (input.equals(commands.get(i))){
-                commands.get(i).execute(input);
-            }else {
-                System.out.println("invalid command");
-            }
         }
-
-
     }
-
-
-
 
 
     public void start() {
