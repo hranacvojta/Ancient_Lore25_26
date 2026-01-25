@@ -2,6 +2,7 @@
   "rooms": [
     {
       "roomName": "Barracks",
+      "id": "barracks",
       "unlocked": true,
       "completed": false,
       "droppedItems": [],
@@ -9,6 +10,7 @@
     },
     {
       "roomName": "Lohorice",
+      "id": "lohorice",
       "unlocked": false,
       "completed": false,
       "droppedItems": [],
@@ -17,6 +19,7 @@
     },
     {
       "roomName": "ZdusyNadSazavou",
+      "id": "zdusynadsazavou",
       "unlocked": false,
       "completed": false,
       "droppedItems": [],
@@ -24,6 +27,7 @@
     },
     {
       "roomName": "ForestOfMonsters",
+      "id": "forestofmonsters",
       "unlocked": false,
       "completed": false,
       "droppedItems": [],
@@ -32,6 +36,7 @@
     },
     {
       "roomName": "EastMountainRange",
+      "id": "eastmountainrange",
       "unlocked": false,
       "completed": false,
       "droppedItems": [],
@@ -41,6 +46,7 @@
     },
     {
       "roomName": "Swamp",
+      "id": "swamp",
       "unlocked": false,
       "completed": false,
       "droppedItems": [],
@@ -50,6 +56,7 @@
     },
     {
       "roomName": "MiddleEarth",
+      "id": "middleearth",
       "unlocked": false,
       "completed": false,
       "droppedItems": [],

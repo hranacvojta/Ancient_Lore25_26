@@ -6,7 +6,7 @@ public class Help implements Command {
     Console console;
     @Override
     public String execute(String command) {
-        return "commands: Achivements, Buy, Drop, Fight, HowToPlay, PickUp, PickOff, PutOn, Speak, WalkTo";
+        return "commands: Achivements, Buy, Drop, Fight, HowToPlay, PickUp, PickOff, PutOn, Speak, WalkTo, WhereToGo";
     }
 
     @Override

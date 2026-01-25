@@ -2,15 +2,14 @@ package Other;
 
 import Items.Item;
 
-import javax.print.attribute.standard.MediaSize;
 import java.util.ArrayList;
 
 public class Room {
 
     private String roomName;
     private boolean unlocked =  false;
+    private String id;
     private boolean completed = false;
-    private String actualRoomName;
     private ArrayList<Item> droppedItems;
     private ArrayList<String> aviableRooms;
     GameData data = new GameData();
@@ -25,12 +24,11 @@ public class Room {
 
 
 
-    public Other.Room getRoom(String name) {
-        if (data.rooms == null) {
-            return null;
-        }
+
+        public Room getRoom(String id) {
+
         for (Room room : data.rooms) {
-            if (room.getRoomName().equalsIgnoreCase(name)) {
+            if (room.getId().equalsIgnoreCase(id)) {
                 return room;
             }
         }
@@ -38,8 +36,24 @@ public class Room {
     }
 
 
+
+//    public Other.Room getRoom(String id) {
+//        if (data.rooms == null) {
+//            return null;
+//        }
+//        for (Room room : data.rooms) {
+//            if (room.getRoomName().equalsIgnoreCase(id)) {
+//                return room;
+//            }
+//        }
+//        return null;
+//    }
+
+
     public String getTargetRoomName(String userInput) {
-        if (aviableRooms == null) return null;
+        if (aviableRooms == null){
+            return null;
+        }
 
         for (String room : aviableRooms) {
             if (room.equalsIgnoreCase(userInput)) {
@@ -70,14 +84,6 @@ public class Room {
         this.completed = completed;
     }
 
-    public String getActualRoomName() {
-        return actualRoomName;
-    }
-
-    public void setActualRoomName(String actualRoomName) {
-        this.actualRoomName = actualRoomName;
-    }
-
     public ArrayList<Item> getDroppedItems() {
         return droppedItems;
     }
@@ -86,4 +92,25 @@ public class Room {
         return aviableRooms;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "roomName='" + roomName + '\'' +
+                ", unlocked=" + unlocked +
+                ", id='" + id + '\'' +
+                ", completed=" + completed +
+                ", droppedItems=" + droppedItems +
+                ", aviableRooms=" + aviableRooms +
+                ", data=" + data +
+                '}';
+    }
 }

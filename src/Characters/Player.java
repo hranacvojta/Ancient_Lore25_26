@@ -3,25 +3,31 @@ package Characters;
 
 import Items.Item;
 import Other.Room;
+import Other.GameData;
 
+
+import javax.print.attribute.standard.MediaSize;
 import java.util.ArrayList;
-import java.util.function.ToDoubleBiFunction;
 
 
 public class Player extends Character {
+
+    GameData gD;
 
 
     private boolean headPartCovered = false;
     private boolean chestPartCovered = false;
     private boolean legsPartCovered = false;
 
-    private int playerStatus;
+    private int playerStatus = 0;
     private boolean sparedEnemy = false;
-    private double dexterityOfPlayer;
+    private double dexterityOfPlayer = 0;
     private boolean cheaperSmith = false;
-    private int purse;
+    private int purse = 0;
     private ArrayList<Item> items;
     private ArrayList<Room> rooms;
+
+    private ArrayList<Item> playersInvetory = new ArrayList<>();
 
 
     private boolean questActiveOldman = false;
@@ -30,9 +36,18 @@ public class Player extends Character {
     private boolean questActiveMayor = false;
 
 
+
     private Room locationOfPlayer;
+    public Player() {
+    }
 
+    public Room getLocationOfPlayer() {
+        return locationOfPlayer;
+    }
 
+    public void setLocationOfPlayer(Room locationOfPlayer) {
+        this.locationOfPlayer = locationOfPlayer;
+    }
 
     private ArrayList<Item> playersInventory;
 
@@ -133,19 +148,4 @@ public class Player extends Character {
         this.questActiveMayor = questActiveMayor;
     }
 
-//    public PlayersLocation getLocationOfPlayer() {
-//        return locationOfPlayer;
-//    }
-//
-//    public void setLocationOfPlayer(PlayersLocation locationOfPlayer) {
-//        this.locationOfPlayer = locationOfPlayer;
-//    }
-
-    public ArrayList<Item> getPlayersInventory() {
-        return playersInventory;
-    }
-
-    public void setPlayersInventory(ArrayList<Item> playersInventory) {
-        this.playersInventory = playersInventory;
-    }
 }

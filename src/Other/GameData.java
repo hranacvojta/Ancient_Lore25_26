@@ -20,7 +20,9 @@ public class GameData {
     ArrayList<FriendlyOrNeutralCharacter> friendlyOrNeutralCharacters;
     ArrayList<HostileCharacter> hostileCharacters;
 
-
+    public ArrayList<Room> getRooms(String requestedLocation) {
+        return rooms;
+    }
 
     /**
      * Loads game data from a JSON file.
