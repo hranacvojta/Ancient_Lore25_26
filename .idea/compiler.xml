@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Ancient_Lore25-26" />
-        <module name="jackson-demo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jackson-demo" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

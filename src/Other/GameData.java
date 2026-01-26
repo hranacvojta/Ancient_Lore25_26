@@ -35,7 +35,7 @@ public class GameData {
         Gson gson = new Gson();
 
         //Načtení souboru gamedata.json, musí být ve složce res/resources, ta musí být označena jako resource složka projektu
-        try (InputStream is = Console.class.getResourceAsStream(resourcePath)) {
+        try (InputStream is = GameData.class.getResourceAsStream(resourcePath)) {
             //Zde ověřujeme, zdali soubor existuje
             if (is == null) {
                 throw new IllegalStateException("Nenalezen resource: " + resourcePath +

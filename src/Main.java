@@ -1,4 +1,3 @@
-import Commands.Help;
 import Other.Console;
 
 public class Main {

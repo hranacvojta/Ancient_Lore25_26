@@ -26,7 +26,7 @@ public class Console {
 
     public void inicialization() {
         commands.put("walkto", new WalkTo(this));
-        commands.put("achivements", new Achievements());
+        commands.put("achivements", new Achievements(this));
         commands.put("buy", new Buy());
         commands.put("drop", new Drop());
         commands.put("fight", new Fight());

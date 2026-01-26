@@ -15,7 +15,6 @@ public class WalkTo implements Command {
     Scanner sc = new Scanner(System.in);
 
 
-
     private Room playersLocation;
     GameData gameData;
     Room r;
@@ -28,23 +27,18 @@ public class WalkTo implements Command {
     @Override
     public String execute(String command) {
 
-
         System.out.println("Enter the location you want to walk to");
         String requestedLocation = sc.nextLine().trim().toLowerCase();
 
-        if (console.getActiveRoom().getAviableRooms().contains(requestedLocation)) {
-            console.setActiveRoom(r.getRoom(requestedLocation));
-        }
+        r.targetingRoom(requestedLocation);
 
-        return "You have entered: " + console.getActiveRoom().getRoomName();
-
+        return "nedco se posralo mozna";
     }
-
-
-
 
     @Override
     public boolean exit() {
         return false;
     }
+
+
 }

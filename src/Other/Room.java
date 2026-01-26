@@ -8,27 +8,29 @@ public class Room {
 
     private String roomName;
     private boolean unlocked =  false;
-    private String id;
+    private String id = "Lohorice";
     private boolean completed = false;
     private ArrayList<Item> droppedItems;
     private ArrayList<String> aviableRooms;
     GameData data = new GameData();
+    Console con;
 
 
+    public Room() {}
 
     public String getRoomName() {
         return roomName;
     }
 
-    public Room() {}
-
-
 
 
         public Room getRoom(String id) {
 
+        if (data.rooms == null) {
+            return null;
+        }
         for (Room room : data.rooms) {
-            if (room.getId().equalsIgnoreCase(id)) {
+            if (room.getId().equals(id.trim().toLowerCase())) {
                 return room;
             }
         }
@@ -36,32 +38,36 @@ public class Room {
     }
 
 
+    public Room targetingRoom(String id){
+        for (Room room: data.rooms){
 
-//    public Other.Room getRoom(String id) {
-//        if (data.rooms == null) {
+            if (data.rooms.contains(room.getId().equals(id.trim().toLowerCase()))){
+                if (room.isUnlocked() == false){
+                System.out.println("You cant go here yet...");
+            }else{
+                    System.out.print("You are traveling to location:" + room.getRoomName());
+                    con.setActiveRoom(room);
+                }
+            }
+            System.out.println("this location does not exists");
+        }
+        return null;
+    }
+
+
+
+//    public String getTargetRoomName(String userInput) {
+//        if (aviableRooms == null){
 //            return null;
 //        }
-//        for (Room room : data.rooms) {
-//            if (room.getRoomName().equalsIgnoreCase(id)) {
+//
+//        for (String room : aviableRooms) {
+//            if (room.equalsIgnoreCase(userInput)) {
 //                return room;
 //            }
 //        }
 //        return null;
 //    }
-
-
-    public String getTargetRoomName(String userInput) {
-        if (aviableRooms == null){
-            return null;
-        }
-
-        for (String room : aviableRooms) {
-            if (room.equalsIgnoreCase(userInput)) {
-                return room;
-            }
-        }
-        return null;
-    }
 
 
     public void setRoomName(String roomName) {
