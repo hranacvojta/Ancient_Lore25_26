@@ -22,51 +22,7 @@ public class Room {
     }
 
 
-//
-//    public Room getRoom(String id) {
-//
-//        if (data.rooms == null) {
-//            return null;
-//        }
-//        for (Room room : data.rooms) {
-//            if (room.getId().equals(id.trim().toLowerCase())) {
-//                return room;
-//            }
-//        }
-//        return null;
-//    }
 
-
-//    public Room targetingRoom(String id){
-//        for (Room room: data.rooms){
-//
-//            if (room.getId().equals(id.trim().toLowerCase())){
-//                if (room.isUnlocked() == false){
-//                    System.out.println("You cant go here yet...");
-//                }else{
-//                    System.out.print("You are traveling to location:" + room.getRoomName());
-//                    con.setActiveRoom(room);
-//                }
-//            }
-//            System.out.println("this location does not exists");
-//        }
-//        return null;
-//    }
-
-
-
-//    public String getTargetRoomName(String userInput) {
-//        if (aviableRooms == null){
-//            return null;
-//        }
-//
-//        for (String room : aviableRooms) {
-//            if (room.equalsIgnoreCase(userInput)) {
-//                return room;
-//            }
-//        }
-//        return null;
-//    }
 
 
     public void setRoomName(String roomName) {

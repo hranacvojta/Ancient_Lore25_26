@@ -11,7 +11,7 @@
     {
       "roomName": "Lohorice",
       "id": "lohorice",
-      "unlocked": false,
+      "unlocked": true,
       "completed": false,
       "droppedItems": [],
       "aviableRooms": ["ZdusyNadSazvou"]
