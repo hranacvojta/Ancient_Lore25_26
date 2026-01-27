@@ -11,13 +11,12 @@ import java.util.Scanner;
 public class WalkTo implements Command {
 
 
-    final Other.Console console;
-    Scanner sc = new Scanner(System.in);
+    private final Other.Console console;
 
 
-    private Room playersLocation;
+
+    Room playersLocation;
     GameData gameData;
-    Room r;
 
 
     public WalkTo(Other.Console console) {
@@ -26,14 +25,27 @@ public class WalkTo implements Command {
 
     @Override
     public String execute(String command) {
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the location you want to walk to");
         String requestedLocation = sc.nextLine().trim().toLowerCase();
 
-        r.targetingRoom(requestedLocation);
+        for (Room room : console.getGameData().rooms){
+            if  (room.getId().equals(requestedLocation.trim().toLowerCase())){
+                if (room.isUnlocked() == false){
+                    System.out.println("You cant go here yet...");
+                }else{
+                    System.out.print("You are traveling to location:" + room.getRoomName());
+                    console.setActiveRoom(room);
+                }
+            }
 
-        return "nedco se posralo mozna";
+        }
+
+        return "";
+
     }
+
 
     @Override
     public boolean exit() {

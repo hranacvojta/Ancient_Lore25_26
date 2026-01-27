@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class GameData {
 
 
-    ArrayList<Other.Room> rooms;
+    public ArrayList<Other.Room> rooms;
     ArrayList<Armor> armor;
     ArrayList<Weapon> weapons;
     ArrayList<Armor> shields;

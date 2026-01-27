@@ -8,12 +8,11 @@ public class Room {
 
     private String roomName;
     private boolean unlocked =  false;
-    private String id = "Lohorice";
+    private String id = "";
     private boolean completed = false;
     private ArrayList<Item> droppedItems;
     private ArrayList<String> aviableRooms;
-    GameData data = new GameData();
-    Console con;
+
 
 
     public Room() {}
@@ -23,36 +22,36 @@ public class Room {
     }
 
 
+//
+//    public Room getRoom(String id) {
+//
+//        if (data.rooms == null) {
+//            return null;
+//        }
+//        for (Room room : data.rooms) {
+//            if (room.getId().equals(id.trim().toLowerCase())) {
+//                return room;
+//            }
+//        }
+//        return null;
+//    }
 
-        public Room getRoom(String id) {
 
-        if (data.rooms == null) {
-            return null;
-        }
-        for (Room room : data.rooms) {
-            if (room.getId().equals(id.trim().toLowerCase())) {
-                return room;
-            }
-        }
-        return null;
-    }
-
-
-    public Room targetingRoom(String id){
-        for (Room room: data.rooms){
-
-            if (data.rooms.contains(room.getId().equals(id.trim().toLowerCase()))){
-                if (room.isUnlocked() == false){
-                System.out.println("You cant go here yet...");
-            }else{
-                    System.out.print("You are traveling to location:" + room.getRoomName());
-                    con.setActiveRoom(room);
-                }
-            }
-            System.out.println("this location does not exists");
-        }
-        return null;
-    }
+//    public Room targetingRoom(String id){
+//        for (Room room: data.rooms){
+//
+//            if (room.getId().equals(id.trim().toLowerCase())){
+//                if (room.isUnlocked() == false){
+//                    System.out.println("You cant go here yet...");
+//                }else{
+//                    System.out.print("You are traveling to location:" + room.getRoomName());
+//                    con.setActiveRoom(room);
+//                }
+//            }
+//            System.out.println("this location does not exists");
+//        }
+//        return null;
+//    }
 
 
 
@@ -116,7 +115,6 @@ public class Room {
                 ", completed=" + completed +
                 ", droppedItems=" + droppedItems +
                 ", aviableRooms=" + aviableRooms +
-                ", data=" + data +
                 '}';
     }
 }

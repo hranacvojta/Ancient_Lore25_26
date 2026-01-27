@@ -26,7 +26,7 @@ public class Console {
 
     public void inicialization() {
         commands.put("walkto", new WalkTo(this));
-        commands.put("achivements", new Achievements(this));
+//        commands.put("achivements", new Achievements(this));
         commands.put("buy", new Buy());
         commands.put("drop", new Drop());
         commands.put("fight", new Fight());
@@ -51,7 +51,7 @@ public class Console {
 
     public void execute() {
         System.out.print(">> ");
-        String input = sc.next();
+        String input = sc.nextLine();
         input = input.trim().toLowerCase();
         if (commands.containsKey(input)) {
             System.out.println(">> " + commands.get(input).execute(input));
@@ -79,6 +79,9 @@ public class Console {
 
     public void setActiveRoom(Room activeRoom) {
         this.activeRoom = activeRoom;
+    }
+    public GameData getGameData() {
+        return data;
     }
 
 }

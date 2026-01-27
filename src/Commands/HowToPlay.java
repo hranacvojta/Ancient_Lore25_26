@@ -1,11 +1,6 @@
 package Commands;
 
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Random;
-
 public class HowToPlay implements Command {
 
 
@@ -21,7 +16,7 @@ public class HowToPlay implements Command {
 //            Random rnd = new Random();
 //            return list.get(rnd.nextInt(list.size()));
 //        }catch(Exception e){
-            return "asda dsd.";
+        return "asda dsd.";
 //        }
     }
 
