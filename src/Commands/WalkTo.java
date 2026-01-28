@@ -14,11 +14,12 @@ public class WalkTo implements Command {
     private final Other.Console console;
 
 
-
-    Room playersLocation;
-    GameData gameData;
-
-
+    /**
+     * 1. asks in which location player wants to go
+     * 2. if its accessible (must be unlocked and not completed) players actual location (activeLocation) sets to new location
+     * @param console command base
+     * @return execute method retutrns active room (players location)
+     */
     public WalkTo(Other.Console console) {
         this.console = console;
     }
@@ -32,8 +33,8 @@ public class WalkTo implements Command {
 
         for (Room room : console.getGameData().rooms){
             if  (room.getId().equals(requestedLocation.trim().toLowerCase())){
-                if (room.isUnlocked() == false){
-                    System.out.println("You cant go here yet...");
+                if (room.isUnlocked() == false || room.isCompleted() == true) {
+                    System.out.println("You cant go here...");
                 }else{
                     System.out.print("You are traveling to location:" + room.getRoomName());
                     console.setActiveRoom(room);

@@ -10,8 +10,8 @@ public class Inventory {
     private ArrayList<Item> inventory;
     private int capacity;
 
-    public Inventory(ArrayList<Item> inventory, int capacity) {
-        this.inventory = inventory;
+    public Inventory( int capacity) {
+        this.inventory = new ArrayList<>();
         this.capacity = capacity;
     }
 
