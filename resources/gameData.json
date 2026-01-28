@@ -20,7 +20,7 @@
     {
       "roomName": "ZdusyNadSazavou",
       "id": "zdusynadsazavou",
-      "unlocked": false,
+      "unlocked": true,
       "completed": false,
       "droppedItems": [],
       "aviableRooms": ["Lohorice", "ForestOfMonsters", "EastMountainRange", "Swamp", "MiddleEarth"]
@@ -186,9 +186,8 @@
       "price": 120,
       "inpenetrability": 130,
       "bodyPart": "CHESTPLATE"
-    }
-  ],
-  "shields": [
+    },
+
     {
       "itemName": "WoodenShield",
       "id": "woodenshield",

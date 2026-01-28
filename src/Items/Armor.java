@@ -14,6 +14,7 @@ public class Armor extends Item{
                 " itemName='" + itemName + '\'' +
                 ", bodyPart=" + bodyPart +
                 ", inpenetrability=" + inpenetrability +
+                ", id='" + id + '\'' +
                 ", price=" + price +
                 '}';
     }

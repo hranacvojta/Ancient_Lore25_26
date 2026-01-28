@@ -16,25 +16,23 @@ public class Inventory {
     }
 
 
-    public void addItem(Item item) {
-        if (item == null) {
-            System.out.println("object is null...");
-        } else {
-            inventory.add(item);
-            System.out.println("item added...");
-        }
-    }
-
-    public void removeItem(Item item) {
-        if (item == null) {
-            System.out.println("item is null...");
-        }else {
-            inventory.remove(item);
-            System.out.println("item removed...");
-        }
-
-
-    }
+//    public void addItem(Item item) {
+//        if (item == null) {
+//            System.out.println("object is null...");
+//        } else {
+//            inventory.add(item);
+//            System.out.println("item added...");
+//        }
+//    }
+//
+//    public void removeItem(Item item) {
+//        if (item == null) {
+//            System.out.println("item is null...");
+//        }else {
+//            inventory.remove(item);
+//            System.out.println("item removed...");
+//        }
+//    }
 
     public ArrayList<Item> getInventory() {
         return inventory;

@@ -23,18 +23,14 @@ public class Player extends Character {
     private boolean sparedEnemy = false;
     private double dexterityOfPlayer = 0;
     private boolean cheaperSmith = false;
-    private int purse = 0;
-    private ArrayList<Item> items;
-    private ArrayList<Room> rooms;
+    private int purse = 100000;
 
     private ArrayList<Item> playersInvetory = new ArrayList<>();
-
 
     private boolean questActiveOldman = false;
     private boolean questActiveSmithl = false;
     private boolean questActiveScientist = false;
     private boolean questActiveMayor = false;
-
 
 
     private Room locationOfPlayer;
@@ -49,7 +45,6 @@ public class Player extends Character {
         this.locationOfPlayer = locationOfPlayer;
     }
 
-    private ArrayList<Item> playersInventory;
 
 
     public boolean isHeadPartCovered() {
@@ -148,4 +143,7 @@ public class Player extends Character {
         this.questActiveMayor = questActiveMayor;
     }
 
+    public ArrayList<Item> getPlayersInvetory() {
+        return playersInvetory;
+    }
 }

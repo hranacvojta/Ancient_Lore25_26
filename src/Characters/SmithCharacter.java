@@ -1,6 +1,7 @@
 package Characters;
 
 
+import Items.Armor;
 import Items.Weapon;
 
 import java.util.ArrayList;
@@ -13,21 +14,18 @@ public class SmithCharacter extends Character {
 
 
     private ArrayList<Weapon> weaponsStore = new ArrayList<>();
-    private ArrayList<Weapon> armorStore = new ArrayList<>();
-    private ArrayList<Weapon> shieldsStore = new ArrayList<>();
+    private ArrayList<Armor> armorStore = new ArrayList<>();
 
 
     public int getSmithStatus() {
         return SmithStatus;
     }
 
-    public ArrayList<Weapon> getArmorStore() {
+    public ArrayList<Armor> getArmorStore() {
         return armorStore;
     }
 
-    public ArrayList<Weapon> getShieldsStore() {
-        return shieldsStore;
-    }
+
 
     public boolean isSmithBegging() {
         return SmithBegging;
@@ -44,7 +42,6 @@ public class SmithCharacter extends Character {
                 ", SmithBegging=" + SmithBegging +
                 ", weaponsStore=" + weaponsStore +
                 ", armorStore=" + armorStore +
-                ", shieldsStore=" + shieldsStore +
                 ", characterName='" + characterName + '\'' +
                 ", hp=" + hp +
                 ", damage=" + damage +

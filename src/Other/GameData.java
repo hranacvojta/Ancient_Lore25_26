@@ -17,13 +17,16 @@ public class GameData {
     public ArrayList<Other.Room> rooms;
     ArrayList<Armor> armor;
     ArrayList<Weapon> weapons;
-    ArrayList<Armor> shields;
     ArrayList<FriendlyOrNeutralCharacter> friendlyOrNeutralCharacters;
     ArrayList<HostileCharacter> hostileCharacters;
     ArrayList<SmithCharacter> theSmith;
 
     public ArrayList<Room> getRooms(String requestedLocation) {
         return rooms;
+    }
+
+    public ArrayList<SmithCharacter> getTheSmith() {
+        return theSmith;
     }
 
     /**
@@ -59,5 +62,10 @@ public class GameData {
      * @param id the identifier of the location to be found
      * @return the matching location
      */
+
+
+
+
+
 
 }

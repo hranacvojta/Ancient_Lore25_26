@@ -13,9 +13,10 @@ public class Weapon extends Item {
     public String toString() {
         return "Weapon{" +
                 " itemName='" + itemName + '\'' +
-                "  damage=" + damage +
+                ", damage=" + damage +
                 ", twoHanded=" + twoHanded +
                 ", dexterityRequired=" + dexterityRequired +
+                ", id='" + id + '\'' +
                 ", price=" + price +
                 '}';
     }
