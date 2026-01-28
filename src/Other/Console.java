@@ -1,8 +1,12 @@
 package Other;
 
+import Characters.Character;
+import Characters.FriendlyOrNeutralCharacter;
 import Characters.Player;
 import Commands.*;
+import Items.Weapon;
 
+import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -43,8 +47,25 @@ public class Console {
         System.out.println("Shields: " + data.shields.size());
         System.out.println("FriendlyAndNeutrals:" + data.friendlyOrNeutralCharacters.size());
         System.out.println("Hostiles: " + data.hostileCharacters.size());
-
+        System.out.println(data.theSmith.size());
         System.out.println(activeRoom);
+//        System.out.println(data.theSmith.get(0));
+
+        System.out.println(data.theSmith.get(0).getWeaponsStore());
+        data.theSmith.get(0).getWeaponsStore().add(data.weapons.get(0));
+        System.out.println(data.theSmith.get(0).getWeaponsStore());
+        System.out.println(data.weapons.get(0));
+//        data.theSmith.get(0).getWeaponsStore().contains(null);
+
+
+        for (Weapon w : data.weapons) {
+            data.theSmith.get(0).getWeaponsStore().add(w);
+        }
+
+        for (int i = 0; i < data.theSmith.get(0).getWeaponsStore().size(); i++) {
+            System.out.println(data.theSmith.get(0).getWeaponsStore().get(i));
+
+        }
 
     }
 

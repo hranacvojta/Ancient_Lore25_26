@@ -8,6 +8,13 @@ public class Armor extends Item{
     private BodyPartEnum bodyPart;
 
 
-
-
+    @Override
+    public String toString() {
+        return "Armor{" +
+                " itemName='" + itemName + '\'' +
+                ", bodyPart=" + bodyPart +
+                ", inpenetrability=" + inpenetrability +
+                ", price=" + price +
+                '}';
+    }
 }

@@ -205,18 +205,7 @@
     }
   ],
   "friendlyOrNeutralCharacters": [
-    {
-      "characterName":"Smith",
-      "id": "smith",
-      "hp": 100,
-      "damage": 80,
-      "combatSpeed": 8,
-      "completed": false,
-      "overallInpenetrability": 0,
-      "friendlyStatus": 20,
-      "store": [],
-      "begging": false
-    },
+
     {
       "characterName":"Scientist",
       "id": "scientist",
@@ -382,5 +371,21 @@
       "necesaryGeneralCompletion": true,
       "reward": 0
     }
-  ]
+  ],
+  "theSmith": [
+    {
+  "characterName":"Smith",
+  "id": "smith",
+  "hp": 100,
+  "damage": 80,
+  "combatSpeed": 8,
+  "completed": false,
+  "overallInpenetrability": 0,
+  "SmithStatus": 20,
+  "weaponsStore": [],
+  "armorStore": [],
+  "shieldsStore": [],
+  "SmithBegging": false
+}
+    ]
 }

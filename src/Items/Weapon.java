@@ -9,4 +9,14 @@ public class Weapon extends Item {
     private double dexterityRequired;
 
 
+    @Override
+    public String toString() {
+        return "Weapon{" +
+                " itemName='" + itemName + '\'' +
+                "  damage=" + damage +
+                ", twoHanded=" + twoHanded +
+                ", dexterityRequired=" + dexterityRequired +
+                ", price=" + price +
+                '}';
+    }
 }
